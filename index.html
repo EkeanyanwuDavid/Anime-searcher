@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anime Finder</title>
+    <link rel="stylesheet" href="src/output.css" />
+  </head>
+  <body class="bg-slate-600 text-slate-100 min-h-screen flex flex-col dark">
+    <header
+      id="dark"
+      class="bg-slate-500 p-4 shadow-md flex justify-between items-center dark"
+    >
+      <h1 class="text-2xl font-bold">Anime Finder</h1>
+      <button
+        id="toggle-dark"
+        class="bg-slate-700 px-3 py-1 rounded-lg hover:bg-slate-600 cursor-pointer"
+      >
+        🌙
+      </button>
+    </header>
+
+    <section class="py-6 text-center">
+      <div class="max-w-xl mx-auto flex gap-2">
+        <input
+          type="text"
+          name="text"
+          id="text"
+          placeholder="Search for an anime"
+          class="flex-1 p-3 rounded-lg bg-slate-700 text-slate-100 placeholder-slate-400 focus:outline-none focus:ring-indigo-500"
+        />
+
+        <button
+          class="px-4 py-2 bg-indigo-600 rounded-lg hover:bg-indigo-700 transition-colors cursor-pointer"
+        >
+          Search
+        </button>
+      </div>
+    </section>
+    <main class="flex-1 p-6">
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-7"
+      >
+        <div class="bg-slate-800 rounded-xl shadow-md overflow-hidden">
+          <img
+            src="Img/Fern • Übel • Wirbel.jpeg"
+            class="w-full h-200 object-cover"
+            alt=""
+          />
+          <div class="p-4 space-y-2">
+            <h2 class="text-lg font-semibold">Sousou no Frieren</h2>
+            <p class="text-sm text-slate-400">
+              TV &centerdot; 2024 &centerdot; ⭐ 10.0
+            </p>
+            <p class="text-sm line-clamp-3">
+              After her hero party's adventures end, the elf mage Frieren
+              reflects on the meaning of time and relationships.
+            </p>
+          </div>
+        </div>
+        <div class="bg-slate-800 rounded-xl shadow-md overflow-hidden">
+          <img
+            src="Img/Rudeus Greyrat - Mushoku Tensei.jpeg"
+            class="w-full h-200"
+            alt=""
+          />
+          <div class="p-4 space-y-2">
+            <h2 class="text-lg font-semibold">Mushoku tensei</h2>
+            <p class="text-sm text-slate-400">
+              TV &centerdot; 2021 &centerdot; ⭐ 7.5
+            </p>
+            <p class="text-sm line-clamp-3">
+              A man is reincarnated into a fantasy world with memories of his
+              past life, determined to live fully this time.
+            </p>
+          </div>
+        </div>
+        <div class="bg-slate-800 rounded-xl shadow-md overflow-hidden">
+          <img src="img/Bleach 🖤.jpeg " class="w-full h-200" alt="" />
+
+          <div class="p-4 space-y-2">
+            <h2 class="text-lg font-semibold">Bleach</h2>
+            <p class="text-sm text-slate-400">
+              TV &centerdot; 2024 &centerdot; ⭐ 8.9
+            </p>
+            <p class="text-sm line-clamp-3">
+              Ichigo Kurosaki becomes a Soul Reaper, protecting humans from evil
+              spirits and guiding souls to the aftelife.
+            </p>
+          </div>
+        </div>
+        <div class="bg-slate-800 rounded-xl shadow-md overflow-hidden">
+          <img
+            src="Img/e2c7b542-7743-4790-8dfa-fafe12df6281 - Copy.jpeg"
+            class="w-full h-200"
+            alt=""
+          />
+
+          <div class="p-4 space-y-2">
+            <h2 class="text-lg font-semibold">Jujutsu kaisen</h2>
+            <p class="text-sm text-slate-500">
+              TV &centerdot; 2023 &centerdot; ⭐ 8.9
+            </p>
+            <p class="text-sm line-clamp-3">
+              Yuji Itadori joins a secret organization of sorcerers to eliminate
+              powerful curses threatening humanity.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <style>
+      body {
+        background: #45556c;
+        color: #e2e8f0;
+      }
+
+      header {
+        background: #202d3f !important;
+      }
+
+      .dark {
+        background: #121212;
+        color: #f1f5f9;
+      }
+    </style>
+    <footer class="bg-slate-800 p-4 text-center text-slate-400">
+      Built by
+      <a
+        href="https://github.com/EkeanyanwuDavid"
+        class="text-indigo-400 hover:underline"
+        >Daichi⚡</a
+      >
+    </footer>
+  </body>
+  <script src="app.js"></script>
+</html>
